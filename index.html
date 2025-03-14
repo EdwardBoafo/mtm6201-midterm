@@ -5,42 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mid term Mockup</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://kit.fontawesome.com/8164297fea.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  <!--skip-link and aria label-->
+  <a href="./index.html" class="skip-link" aria-label="Skip to main content">Skip to main content</a>
 
+  <div class="top-banner">
+    Free Courses 🌟 Sale Ends Soon, Get It Now <i class="fa-solid fa-arrow-right"></i>
+  </div>
 
-    <div class="top-banner">
-        Free Courses 🌟 Sale Ends Soon, Get It Now<i class="fa-solid fa-arrow-right"></i>
+  
+  <header class="header" role="banner"> <!--aria label-->
+    <div class="logo">
+      <a href="./index.html">
+        <img src="./image/Logo.png" alt="Logo">
+      </a>
     </div>
-    <header class="header">
-        <div class="logo">
-            <img src="./image/Logo.png" alt="Logo">
+           
+    <nav class="nav-desktop" aria-label="Primary Navigation"><!--aria label-->
+      <a href="./index.html">Home</a>
+      <a href="#">Courses</a>
+      <a href="#">About Us</a>
+      <a href="#">Pricing</a>
+      <a href="./contact-page.html">Contact</a>
+    </nav>
+  
+    <div class="auth-menu">
+      <a href="./sign-up.html" class="sign-up">Sign Up</a>
+      <button class="login-btn"><a href="./login-page.html">Login</a></button>
+      <details class="mobile-menu">
+        <summary class="menu-btn">
+          <img src="./image/menu.png" alt="Menu" width="34" height="34">
+        </summary>
+        <div class="dropdown">
+          <a href="./index.html">Home</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="./contact-page.html">Contact</a>
         </div>
-
-        
-        <nav class="nav">
-            <a href="#">Sign Up</a>
-            <button class="login-btn">Login</button>
-        </nav>
-
-       
-        <details class="mobile-menu">
-            <summary class="menu-btn">
-                ☰
-            </summary>
-            <div class="dropdown">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Services</a>
-                <a href="#">Contact</a>
-            </div>
-        </details>
-    </header>
+      </details>
+    </div>
+  </header>
+  
 
     <section class="hero">
         <div class="hero-card">
           <div class="hero-badge">
-            <img src="./image/Icon Container.png" alt="Lightning Icon" />
+            <img src="./image/Icon Container.png" alt="Lightning Icon"/>
             <span>
               <strong class="highlight">Unlock</strong> Your Creative Potential
             </span>
@@ -57,19 +69,477 @@
 
       <section class="logo-bar">
         <div class="logo-item">
-          <img src="./image/Zapier.png" alt="Zapier">
+          <img src="./image/zapier.png" alt="Zapier">
         </div>
-        <div class="divider"></div>
         <div class="logo-item">
           <img src="./image/spotify.png" alt="Spotify">
         </div>
-        <div class="divider"></div>
         <div class="logo-item">
-          <img src="./image/Zoom.png" alt="Zoom">
+          <img src="./image/zoom.png" alt="Zoom">
+        </div>
+        <div class="logo-item hide-mobile">
+          <img src="./image/amazon.png" alt="Amazon">
+        </div>
+        <div class="logo-item hide-mobile">
+          <img src="./image/adobe.png" alt="Adobe">
+        </div>
+        <div class="logo-item hide-mobile">
+          <img src="./image/notion.png" alt="Notion">
+        </div>
+        <div class="logo-item hide-mobile">
+          <img src="./image/Netflix.png" alt="Netflix">
         </div>
       </section>
       
+<!--Video section-->
+      <section class="video-section">
+        <div class="video-container">
+          <picture> <!--responsive-images-->
+            <source srcset="image/Container-1440x.png" media="(min-width: 1280px)" />
+            <source srcset="image/Container-1280x.png" media="(min-width: 960px)" />
+            <source srcset="image/Container-960x.png" media="(min-width: 640px)" />
+            <source srcset="image/Container-640x.png" media="(min-width: 480px)" />
+            <source srcset="image/Container-480x.png" media="(max-width: 480px)" />
+            <img src="./image/Container.png" alt="Video Thumbnail" class="video-thumbnail">
+          </picture>
+          
+          <picture> <!--the play button was very small so I just repeated the with no resize-->
+            <source srcset="./image/play Button.png" media="(min-width: 1280px)">
+            <source srcset="./image/play Button.png" media="(min-width: 640px)">
+            <img src="./image/play Button.png" alt="Play Button" class="play-button">
+          </picture>
+          
+        </div>
+      </section>
+
+      <!--Benefit Sections-->
+      <section class="benefits">
+        <h2>Benefits</h2>
+        <p class="benefits-desc">
+          Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in...
+        </p>
+        <button class="view-all">View All</button>
+        <div class="benefits-list">
+          <div class="benefit-item">
+            <div class="benefit-content">
+              <h3>Flexible Learning Schedule</h3>
+              <p>Fit your coursework around your existing commitments and obligations.</p>
+            </div>
+            <div class="benefit-number">01</div>
+            <img src="./image/arrow_button.png" alt="Arrow" class="benefit-arrow">
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-content">
+              <h3>Expert Instruction</h3>
+              <p>Learn from an experience in design and development.</p>
+            </div>
+            <div class="benefit-number">02</div>
+            <img src="./image/arrow_button.png" alt="Arrow" class="benefit-arrow">
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-content">
+              <h3>Diverse Course Offerings</h3>
+              <p>Explore a wide range of design and development courses covering various topics.</p>
+            </div>
+            <div class="benefit-number">03</div>
+            <img src="./image/arrow_button.png" alt="Arrow" class="benefit-arrow">
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-content">
+              <h3>Updated Curriculum</h3>
+              <p>Access courses with up-to-date content reflecting the latest trends and industry practices.</p>
+            </div>
+            <div class="benefit-number">04</div>
+            <img src="./image/arrow_button.png" alt="Arrow" class="benefit-arrow">
+          </div>
+          <div class="benefit-item hide-mobile">
+            <div class="benefit-content">
+              <h3>Practical Projects and Assignments</h3>
+              <p>Develop a portfolio showcasing your skills and abilities to potential employers.</p>
+            </div>
+            <div class="benefit-number">05</div>
+            <img src="./image/arrow_button.png" alt="Arrow" class="benefit-arrow">
+          </div>
+          <div class="benefit-item hide-mobile">
+            <div class="benefit-content">
+              <h3>Interactive Learning Environment</h3>
+              <p>Collaborate with fellow learners, ask questions, and receive feedback to enhance your understanding.</p>
+            </div>
+            <div class="benefit-number">06</div>
+            <img src="./image/arrow_button.png" alt="Arrow" class="benefit-arrow">
+          </div>
+        </div>
+      </section>
+      
+     
+      <!--Courses section-->
+
+      <section class="courses-intro">
+        <h2>Our Courses</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id
+          imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in
+          velit fringilla feugiat senectus in...
+        </p>
+        <button class="view-all-intro">View All</button>
+      </section>
+
+      <section class="courses">
+        <div class="course-card">
+          <img src="./image/mobile app.png" alt="Course Image" class="course-img" />
+          <div class="course-details">
+            <div class="course-meta">
+              <span class="course-duration">4 Weeks</span>
+              <span class="course-level">Beginner</span>
+            </div>
+            <p class="course-author">By John Smith</p>
+            <h3 class="course-title">Web Design Fundamentals</h3>
+            <p class="course-description">
+              Learn the fundamentals of web design, including HTML, CSS, and responsive design principles. Develop the skills to create visually appealing and user-friendly websites.
+            </p>
+            <button class="get-now-btn">Get It Now</button>
+          </div>
+        </div>
+
+          <div class="course-card">
+            <img src="./image/ux.png" alt="Course Image" class="course-img" />
+            <div class="course-details">
+              <div class="course-meta">
+                <span class="course-duration">6 Weeks</span>
+                <span class="course-level">Intermediate</span>
+              </div>
+              <p class="course-author">By Emily Johnson</p>
+              <h3 class="course-title">UI/UX Design</h3>
+              <p class="course-description">
+                Master the art of creating intuitive user interfaces (UI) and enhancing user experiences (UX). Learn design principles, wireframing, prototyping, and usability testing techniques.</p>
+              <button class="get-now-btn">Get It Now</button>
+            </div>
+          </div>
+
+          <div class="course-card">
+            <img src="./image/mobile app.png" alt="Course Image" class="course-img" />
+            <div class="course-details">
+              <div class="course-meta">
+                <span class="course-duration">8 Weeks</span>
+                <span class="course-level">Intermediate</span>
+              </div>
+              <p class="course-author">By David Brown</p>
+              <h3 class="course-title">Mobile App Development</h3>
+              <p class="course-description">
+                Dive into the world of mobile app development. Learn to build native iOS and Android applications using industry-leading frameworks like Swift and Kotlin.
+              </p>
+              <button class="get-now-btn">Get It Now</button>
+            </div>
+          </div>
+
+          <div class="course-card hide-desktop">
+            <img src="./image/mobile app.png" alt="Course Image" class="course-img" />
+            <div class="course-details">
+              <div class="course-meta">
+                <span class="course-duration">8 Weeks</span>
+                <span class="course-level">Intermediate</span>
+              </div>
+              <p class="course-author">By David Brown</p>
+              <h3 class="course-title">Mobile App Development</h3>
+              <p class="course-description">
+                Dive into the world of mobile app development. Learn to build native iOS and Android applications using industry-leading frameworks like Swift and Kotlin.
+              </p>
+              <button class="get-now-btn">Get It Now</button>
+            </div>
+          </div>
+
+          <div class="course-card">
+            <img src="./image/Graphic design.png" alt="Course Image" class="course-img"/>
+            <div class="course-details">
+              <div class="course-meta">
+                <span class="course-duration">10 Weeks</span>
+                <span class="course-level">Beginner</span>
+              </div>
+              <p class="course-author">By Sarah thompson</p>
+              <h3 class="course-title">Graphic Design For Beginners</h3>
+              <p class="course-description">
+                Discover the fundamentals of graphic design, including typography, color theory, layout design, and image manipulation techniques. Create visually stunning designs for print and digital media.
+              </p>
+              <button class="get-now-btn">Get It Now</button>
+            </div>
+          </div>
+
+          <div class="course-card">
+            <img src="./image/front end.png" alt="Course Image" class="course-img"/>
+            <div class="course-details">
+              <div class="course-meta">
+                <span class="course-duration">10 Weeks</span>
+                <span class="course-level">Intermediate</span>
+              </div>
+              <p class="course-author">By Michael Adams</p>
+              <h3 class="course-title">Front end Development</h3>
+              <p class="course-description">
+                Become proficient in front-end web development. Learn HTML, CSS, JavaScript, and popular frameworks like Bootstrap and React. Build interactive and responsive websites.
+              </p>
+              <button class="get-now-btn">Get It Now</button>
+            </div>
+          </div>
+
+          <div class="course-card">
+            <img src="./image/advance javascript.png" alt="Course Image" class="course-img"/>
+            <div class="course-details">
+              <div class="course-meta">
+                <span class="course-duration">6 Weeks</span>
+                <span class="course-level">Advanced</span>
+              </div>
+              <p class="course-author">By John Smith</p>
+              <h3 class="course-title">Advanced JavaScript</h3>
+              <p class="course-description">
+                Take your JavaScript skills to the next level. Explore advanced concepts like closures, prototypes, asynchronous programming, and ES6 features. Build complex applications with confidence.
+              </p>
+              <button class="get-now-btn">Get It Now</button>
+            </div>
+          </div>
+       </section>
+      
+       <!--Testimonial-->
+       <section class="testimonials">
+        <div class="testimonials-intro">
+          <h2>Our Testimonials</h2>
+          <p class="intro-text">
+            Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in...
+          </p>
+          <button class="view-all">View All</button>
+        </div>
+        <div class="testimonials-list">
+          <div class="testimonial-card">
+            <p class="testimonial-text">
+              The web design course provided a solid foundation for me. The instructors
+              were knowledgeable and personable, and the interactive learning
+              environment was engaging. I highly recommend it.
+            </p>
+            <div class="testimonial-footer">
+              <div class="testimonial-user">
+                <img src="./image/Sarah.png" alt="Sarah L" class="testimonial-img" />
+                <span class="testimonial-author">Sarah L</span>
+              </div>
+              <button class="read-full">Read Full Story</button>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <p class="testimonial-text">
+              The UI/UX design course expanded my perspective on creating seamless user
+              experiences. The assignments helped me approach my projects more
+              creatively. I'd definitely take another now.
+            </p>
+            <div class="testimonial-footer">
+              <div class="testimonial-user">
+                <img src="./image/Jason.png" alt="Jason M" class="testimonial-img" />
+                <span class="testimonial-author">Jason M</span>
+              </div>
+              <button class="read-full">Read Full Story</button>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <p class="testimonial-text">
+              The web app development course was fantastic! The step-by-step tutorials
+              and hands-on projects taught me so much. I'm now building my own app.
+              Great course!
+            </p>
+            <div class="testimonial-footer">
+              <div class="testimonial-user">
+                <img src="./image/Emily.png" alt="Emily R" class="testimonial-img" />
+                <span class="testimonial-author">Emily R</span>
+              </div>
+              <button class="read-full">Read Full Story</button>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <p class="testimonial-text">
+              I enrolled in the graphic design course as a hobby, and it was the perfect
+              starting point. It really improved my design abilities significantly. I'm
+              grateful for this course!
+            </p>
+            <div class="testimonial-footer">
+              <div class="testimonial-user">
+                <img src="./image/Michael.png" alt="Michael K" class="testimonial-img" />
+                <span class="testimonial-author">Michael K</span>
+              </div>
+              <button class="read-full">Read Full Story</button>
+            </div>
+          </div>
+        </div>
+      </section>
       
 
+      <!--Price Section-->
+      <section class="pricing-section">
+        <h2>Our Pricing</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur. Tempus tincidunt etiam eget elit id
+          imperdiet et. Ac cum eget habitasse in velit fringilla feugiat senectus in...
+        </p>
+      
+        
+        <div class="toggle-container">
+          <button class="toggle-btn active">Monthly</button>
+          <button class="toggle-btn">Yearly</button>
+        </div>
+      
+       
+        <div class="pricing-card">
+          <button class="plan-btn">Free Plan</button>
+          <div class="price">
+            <span class="amount">$0</span><span class="duration">/month</span>
+          </div>
+          <h4>Available Features</h4>
+          <ul>
+            <li><img src="./image/check-box.png" alt="checkmark"> Access to selected free courses</li>
+            <li><img src="./image/check-box.png" alt="checkmark"> Limited course materials and resources.</li>
+            <li><img src="./image/check-box.png" alt="checkmark"> Basic community support</li>
+            <li><img src="./image/check-box.png" alt="checkmark"> No certification upon completion.</li>
+            <li><img src="./image/check-box.png" alt="checkmark">Ad-supported platform.</li>
+            <li><img src="./image/X Icon Container.png" alt="checkmark">Access to exclusive Pro Plan community forums.</li>
+            <li><img src="./image/X Icon Container.png" alt="checkmark">Early access to new courses and updates.</li>
+          </ul>
+          <button class="start-btn">Get Started</button>
+        </div>
+      
+       
+        <div class="pricing-card">
+          <button class="plan-btn">Pro Plan</button>
+          <div class="price">
+            <span class="amount">$79</span><span class="duration">/month</span>
+          </div>
+          <h4>Available Features</h4>
+          <ul>
+            <li><img src="./image/check-box.png" alt="checkmark"> Unlimited access to all courses</li>
+            <li><img src="./image/check-box.png" alt="checkmark"> Unlimited course materials and resources.</li>
+            <li><img src="./image/check-box.png" alt="checkmark"> Priority support from instructors.</li>
+            <li><img src="./image/check-box.png" alt="checkmark"> Course completion certificates.</li>
+            <li><img src="./image/check-box.png" alt="checkmark"> Ad-free experience.</li>
+            <li><img src="./image/check-box.png" alt="checkmark"> Access to exclusive Pro Plan community forums.</li>
+            <li><img src="./image/check-box.png" alt="checkmark"> Early access to new courses and updates.</li>
+          </ul>
+          <button class="start-btn">Get Started</button>
+        </div>
+      </section>
+      
+      <!--Faq Section--> 
+      <section class="faq-section">
+        <div class="faq-left">
+          <h2>Frequently Asked Questions</h2>
+          <p>Still have any questions? Contact our Team via <a href="mailto:support@skillbridge.com">support@skillbridge.com</a></p>
+          <button class="faq-button">See All FAQ’s</button>
+        </div>
+        <div class="faq-right">
+          <div class="faq-item open">
+            <div class="faq-header">
+              <span>Can I enroll in multiple courses at once?</span>
+              <button class="faq-close">
+                <img src="./image/Button-x-colored.png" alt="Close">
+              </button>
+            </div>
+            <p class="faq-answer">
+              Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.
+            </p>
+            <button class="faq-enroll">
+              Enrollment Process for Different Courses 
+              <img src="./image/arrow-right.png" alt="arrow-right">
+            </button>
+            
+          </div>
+          <div class="faq-item">
+            <div class="faq-header">
+              <span>What kind of support can I expect from instructors?</span>
+              <button class="faq-toggle">
+                <img src="./image/expand-button.png" alt="Expand">
+              </button>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-header">
+              <span>Are the courses self-paced or do they have specific start and end dates?</span>
+              <button class="faq-toggle">
+                <img src="./image/expand-button.png" alt="Expand">
+              </button>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-header">
+              <span>Are there any prerequisites for the courses?</span>
+              <button class="faq-toggle">
+                <img src="./image/expand-button.png" alt="Expand">
+              </button>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-header">
+              <span>Can I download the course materials for offline access?</span>
+              <button class="faq-toggle">
+                <img src="./image/expand-button.png" alt="Expand">
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+
+      <!--Footer-->
+      <footer class="footer" role="contentinfo"><!--aria label-->
+        <div class="footer-top">
+          <img src="./image/Logo.png" alt="Skillbridge Logo" class="footer-logo">
+          <div class="footer-contact">
+            <p><img src="./image/message.png" alt="Email Icon"> hello@skillbridge.com</p>
+            <p><img src="./image/phone.png" alt="Phone Icon"> +91 91813 23 2309</p>
+            <p><img src="./image/location.png" alt="Location Icon"> Somewhere in the World</p>
+          </div>
+        </div>
+      
+        <div class="footer-links">
+          <div class="footer-col">
+            <h3>Home</h3>
+            <ul>
+              <li><a href="#">Benefits</a></li>
+              <li><a href="#">Our Courses</a></li>
+              <li><a href="#">Our Testimonials</a></li>
+              <li><a href="#">Our FAQ</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>About Us</h3>
+            <ul>
+              <li><a href="#">Company</a></li>
+              <li><a href="#">Achievements</a></li>
+              <li><a href="#">Our Goals</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-social">
+          <h3>Social Profiles</h3>
+          <div class="social-icons">
+            <a href="#"><img src="./image/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="./image/twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="./image/linkedin.png" alt="LinkedIn"></a>
+          </div>
+        </div>
+        <hr class="footer-divider">
+        <div class="footer-bottom">
+          <p>© 2023 Skillbridge. All rights reserved.</p>
+        </div>
+        
+      </footer>
+       <!--My Schema code I want it hidden I will use css to achieve that-->
+       <div class="visually-hidden" itemscope itemtype="https://schema.org/Organization">
+        <link itemprop="url" href="https://www.skillbridge.com">
+        <img itemprop="logo" src="https://www.skillbridge.com/image/Logo.png" alt="Skillbridge Logo">
+        <h1 itemprop="name">Skillbridge</h1>
+        <div itemprop="contactPoint" itemscope itemtype="https://schema.org/ContactPoint">
+          <meta itemprop="contactType" content="Customer Service">
+          <p>Call us: <span itemprop="telephone">+91 91813 23 2309</span></p>
+        </div>
+        <div>
+          <a itemprop="sameAs" href="https://www.facebook.com/skillbridge">Facebook</a>
+          <a itemprop="sameAs" href="https://www.twitter.com/skillbridge">Twitter</a>
+          <a itemprop="sameAs" href="https://www.linkedin.com/company/skillbridge">LinkedIn</a>
+        </div>
+      </div>
+      
 </body>
 </html>
